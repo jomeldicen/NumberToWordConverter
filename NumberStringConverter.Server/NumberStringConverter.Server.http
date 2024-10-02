@@ -1,0 +1,6 @@
+@NumberStringConverter.Server_HostAddress = http://localhost:5084
+
+GET {{NumberStringConverter.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

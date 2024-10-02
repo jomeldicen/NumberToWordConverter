@@ -1,0 +1,12 @@
+<div class="container mt-5 mb-5 d-flex justify-content-center">
+    <div class="card px-1 py-4 ajusted-size">
+        <div class="card-body">
+            <h6 class="card-title mb-3">Amount to word Converter</h6>
+            <p>Amount: <strong>{{amountInNum | currency:'USD':'symbol'}}</strong></p>
+            <p>Amount in Words: <strong>{{amountInWords}}</strong></p>
+            <div class=" d-flex flex-column text-center px-5 mt-3 mb-3"> 
+                <a [routerLink]="'/number-converter-form'">[Back to Form]</a>
+            </div> 
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="container mt-5 mb-5 d-flex justify-content-center">
+    <div class="card px-1 py-4">
+        <div class="card-body">
+            <h6 class="card-title mb-3">Amount to word Converter</h6>
+
+            <form [formGroup]="converterForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="name">Please provide a valid number</label>
+                            <input class="form-control" type="number" id="number" placeholder="0"
+                                formControlName="number" />
+                        </div>
+                    </div>
+                </div>
+                <div class=" d-flex flex-column text-center px-5 mt-3 mb-3">
+                    <small class="agree-text">Please enter valid number (Min Number: 0, Max Number: 1000000000, 2 decimal places allowed)</small>
+                </div>
+                <button type="submit" [disabled]="converterForm.invalid"
+                    class="btn btn-primary btn-block confirm-button">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
