@@ -25,6 +25,8 @@ export class NumberConverterOutputComponent implements OnInit {
   public getConvertedNumber(amount: any) {
     this.loading = true;
     this.errorMessage = "";
+
+    // pass the input to the services
     this.numberConverterService.getConvertedNumber(amount).subscribe({
       next: (result) => {
         console.log('response received')

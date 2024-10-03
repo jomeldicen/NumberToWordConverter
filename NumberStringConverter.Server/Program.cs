@@ -10,7 +10,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
 // Register these repository services
 builder.Services.AddScoped<IConverterRepository, ConverterRepository>();
 

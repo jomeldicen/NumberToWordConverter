@@ -10,6 +10,7 @@ export class NumberConverterService {
 
   constructor(private http: HttpClient) { }
 
+  // function that get output from API
   getConvertedNumber(amount: number): Observable<any> {
     return this.http.get(this.baseURL + `Converter?amount=${amount}`)
   }

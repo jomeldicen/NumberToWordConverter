@@ -19,7 +19,10 @@ namespace NumberStringConverter.Server.Controllers
         {
             try
             {
+                // Initiliaze DTO object
                 var converterdNum = new ConvertedNumberDTO();
+
+                // Call repository method
                 converterdNum.NumberInWords = await _converterRepository.ConvertNumberToWord(amount);
 
                 return converterdNum;
